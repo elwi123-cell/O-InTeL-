@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071a35" />
+  <meta name="description" content="O-InTeL — Organised Intelligence for Communication." />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>O-InTeL | Communication Intelligence</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/assets/o-intel-logo.jpg" alt="O-InTeL logo" />
+      <div><strong>O-InTeL</strong><small>COMMUNICATION INTELLIGENCE</small></div>
+    </div>
+    <span class="status"><i></i> Secure workspace</span>
+  </header>
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">INTELLIGENCE WORKSPACE</p>
+      <h1>Understand every connection.</h1>
+      <p class="intro">Bring communication records, people, organisations and timelines into one organised intelligence workspace.</p>
+      <div class="actions">
+        <button id="connectBtn" class="primary" type="button">Connect Gmail</button>
+        <span class="scope-note">Read-only access · OAuth 2.0</span>
+      </div>
+    </section>
+    <section class="stats" aria-label="Workspace overview">
+      <article><span>Connected accounts</span><strong id="accounts">0</strong><small>Awaiting secure connection</small></article>
+      <article><span>People & entities</span><strong id="entities">—</strong><small>Identified from records</small></article>
+      <article><span>Communication records</span><strong id="records">—</strong><small>Historical + new activity</small></article>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">CORE MODULES</p><h2>Intelligence overview</h2></div><span class="tag">Android-first</span></div>
+      <div class="module-grid">
+        <article class="module"><b class="symbol">✉</b><div><h3>Communications</h3><p>Messages, threads, dates, participants and attachments.</p></div></article>
+        <article class="module"><b class="symbol">◎</b><div><h3>People & entities</h3><p>Recognise contacts, organisations and recurring correspondents.</p></div></article>
+        <article class="module"><b class="symbol">↔</b><div><h3>Relationships</h3><p>Explore communication links and interaction histories.</p></div></article>
+        <article class="module"><b class="symbol">▤</b><div><h3>Timeline & analytics</h3><p>Review activity patterns, timelines and communication volume.</p></div></article>
+      </div>
+    </section>
+    <section class="panel connection">
+      <div><p class="eyebrow">INTEGRATION STATUS</p><h2>Gmail connection</h2><p id="connectionText">No Gmail account connected. Connect an account to begin authorised setup.</p></div>
+      <div class="connection-state"><span class="dot"></span><strong id="connectionState">Not connected</strong></div>
+    </section>
+    <p class="footnote">Your data stays under your control. O-InTeL uses read-only Gmail access in this integration. Production synchronisation requires server-side configuration.</p>
+  </main>
+  <nav class="bottom-nav" aria-label="Primary navigation">
+    <a class="active" href="#overview">⌂<small>Overview</small></a>
+    <a href="#communications">✉<small>Messages</small></a>
+    <a href="#entities">◎<small>Entities</small></a>
+    <a href="#settings">⚙<small>Settings</small></a>
+  </nav>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
